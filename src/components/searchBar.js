@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import "./searchBar.scss"
 
-export default function SearchBar({ search, setSearch }) {
+export default function SearchBar({ setSearch }) {
   // Stores the value of the search input
   const [searchValue, setSearchValue] = useState("")
 
@@ -45,6 +45,5 @@ export default function SearchBar({ search, setSearch }) {
 }
 
 SearchBar.propTypes = {
-  search: PropTypes.string.isRequired,
   setSearch: PropTypes.func.isRequired,
 }
