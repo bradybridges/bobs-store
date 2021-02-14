@@ -23,8 +23,9 @@
 .pagination-bar__page-button--active {
   background-color: var(--black);
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  margin: 0 2px;
   color: white;
   cursor: default;
 }
