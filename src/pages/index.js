@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SearchBar from "../components/searchBar"
 import SearchResults from "../components/searchResults"
+import HeroImage from "../components/heroImage"
 
 import { searchProducts } from "../api/products"
 
@@ -97,7 +98,10 @@ export default function IndexPage() {
   return (
     <Layout>
       <SEO title="Home" />
-      <SearchBar setSearch={setSearch} />
+      <HeroImage src="https://cdn.pixabay.com/photo/2015/03/26/10/38/girl-691712_1280.jpg">
+        <h3 className="hero-image__banner">Find your favorite products!</h3>
+        <SearchBar setSearch={setSearch} />
+      </HeroImage>
       {handleRenderResults()}
     </Layout>
   )
