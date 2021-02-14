@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import "./arrowButton.scss"
 
 export default function ArrowButton({ type, clickHandler, disabled }) {
   const renderButtonIcon = () => {
@@ -22,9 +23,17 @@ export default function ArrowButton({ type, clickHandler, disabled }) {
   }
 
   if (disabled) {
-    return <button disabled>{renderButtonIcon()}</button>
+    return (
+      <button className="arrow-button" disabled>
+        {renderButtonIcon()}
+      </button>
+    )
   } else {
-    return <button onClick={handleClick}>{renderButtonIcon()}</button>
+    return (
+      <button className="arrow-button" onClick={handleClick}>
+        {renderButtonIcon()}
+      </button>
+    )
   }
 }
 
