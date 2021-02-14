@@ -6,11 +6,12 @@ import ProductCard from "../components/productCard"
 
 export default function SearchResults({ products }) {
   const renderProducts = () => {
-    return products.results.map(product => {
+    return products.results.map((product, i) => {
       const { name, price, msrp, thumbnailImageUrl } = product
 
       return (
         <ProductCard
+          key={`${name}${i}`}
           thumbnail={thumbnailImageUrl}
           name={name}
           price={price}
