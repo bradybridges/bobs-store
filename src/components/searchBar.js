@@ -15,7 +15,6 @@ export default function SearchBar({ setSearch }) {
     e.preventDefault()
 
     if (isSearchValid()) {
-      console.log("Ready to send API call")
       setSearch(searchValue)
       setSearchValue("")
     }
