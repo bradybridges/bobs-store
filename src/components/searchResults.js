@@ -1,5 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
+import "./searchResults.scss"
+
 import ProductCard from "../components/productCard"
 
 export default function SearchResults({ products }) {

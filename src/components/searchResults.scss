@@ -1,0 +1,9 @@
+.search-results {
+  padding: var(--spacer-m) var(--spacer-l);
+}
+
+.search-results__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: var(--spacer);
+}
