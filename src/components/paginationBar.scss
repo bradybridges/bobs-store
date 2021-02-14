@@ -1,0 +1,31 @@
+.pagination-bar {
+  display: flex;
+  justify-content: center;
+  margin: var(--spacer-m) 0;
+}
+
+.pagination-bar__pages-container {
+  margin: 0px 2px;
+}
+
+.pagination-bar__page-button {
+  font-family: sans-serif;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-bottom: solid var(--black) 1px;
+  }
+}
+
+.pagination-bar__page-button--active {
+  background-color: var(--black);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 0 2px;
+  color: white;
+  cursor: default;
+}
