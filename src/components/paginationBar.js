@@ -5,6 +5,7 @@ import "./paginationBar.scss"
 import ArrowButton from "./arrowButton"
 
 export default function PaginationBar({ page, totalPages, setPage }) {
+  // Accepts "prev", "next" or a page number
   const handleSetPage = action => {
     if (action === "prev") {
       setPage(page - 1)
@@ -54,7 +55,7 @@ export default function PaginationBar({ page, totalPages, setPage }) {
         clickHandler={handleSetPage}
         disabled={prevDisabled}
       />
-      {renderPages()}
+      <div className="pagination-bar__pages-container">{renderPages()}</div>
       <ArrowButton
         type="next"
         clickHandler={handleSetPage}
