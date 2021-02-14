@@ -21,7 +21,7 @@ export default function IndexPage() {
       } catch (e) {
         const { message } = e
         setProducts({})
-        
+
         if (message.includes("Failed to fetch")) {
           setError(
             "There was a problem loading products. Please try again later!"

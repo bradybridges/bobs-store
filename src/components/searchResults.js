@@ -22,9 +22,7 @@ export default function SearchResults({ products }) {
 
   return (
     <div className="search-results">
-      <div className="search-results__wrapper">
-        {renderProducts()}
-      </div>
+      <div className="search-results__wrapper">{renderProducts()}</div>
     </div>
   )
 }
