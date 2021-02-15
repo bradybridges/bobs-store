@@ -24,8 +24,9 @@
   border-radius: 4px 0px 0px 4px;
   border: none;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.2em;
   opacity: 0.9;
+  font-family: 'roboto slab';
 
   @media only screen and (max-width: 650px) {
     width: 100%;
@@ -40,7 +41,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: forestgreen;
+  background-color: var(--black);
+  background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
   opacity: 0.9;
   cursor: pointer;
 
@@ -55,5 +60,7 @@
     height: 64px;
     margin-top: var(--spacer);
     border-radius: 4px;
+    background-size: cover;
+    border: solid #ffffff80 1px;
   }
 }

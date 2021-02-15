@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import "./searchBar.scss"
 
-import SearchIcon from "../images/loupe.png"
+import SearchIcon from "../images/loupe-white.png"
 export default function SearchBar({ setSearch }) {
   const [searchValue, setSearchValue] = useState("")
 
