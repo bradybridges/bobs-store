@@ -1,6 +1,23 @@
 .bobs-header {
-  background: black;
+  background-color: black;
   background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
   background-repeat: repeat-x;
   background-size: contain;
+  height: 100px;
+  border-bottom: solid #ffffff80 1px;
+}
+
+.bob-header__wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+}
+
+.bob-header__title {
+  margin: 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
