@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-
+import "./index.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SearchBar from "../components/searchBar"
@@ -98,7 +98,7 @@ export default function IndexPage() {
   return (
     <Layout>
       <SEO title="Home" />
-      <HeroImage src="https://cdn.pixabay.com/photo/2015/03/26/10/38/girl-691712_1280.jpg">
+      <HeroImage src="https://cdn.pixabay.com/photo/2016/11/22/10/47/woman-1848949_960_720.jpg">
         <h3 className="hero-image__banner">Find your favorite products!</h3>
         <SearchBar setSearch={setSearch} />
       </HeroImage>
