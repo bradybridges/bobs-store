@@ -4,7 +4,8 @@
 * [Project Board](#Project-Board)
 * [Technologies Used](#Technologies-Used)
 * [Issues / Future Improvements](#Issues-/-Future-Improvements)
-* [Screenshots](#Screenshots) 
+* [Screenshots](#Screenshots)
+* [Installation](#Installation)
 
 # Live Site
 
@@ -52,4 +53,40 @@ I really like using GitHub Projects for keeping track of progress. The built in 
 # Screenshots
 
 ![screencapture-localhost-8000-2021-02-15-09_36_36](https://user-images.githubusercontent.com/25031031/107972605-5439e500-6f71-11eb-9c86-e0f2b8cbb917.png)
+
+# Installation
+
+### Prerequisites
+- You have git installed globally
+- You have gatsby-cli installed globally
+- You have node installed globally
+- You have nvm installed  globally
+<br />
+<br />
+
+1. First clone the repository to your local machine
+<br />
+`git clone https://github.com/bradybridges/bobs-store.git`
+
+1. Change to project directory
+<br />
+`cd bobs-store`
+
+1. Ensure you are using the projects specified version of Node
+<br />
+`nvm use`
+
+1. Install Dependencies
+<br />
+`yarn install`
+OR
+`npm install`
+
+1. Start the development server!
+<br />
+`gatsby develop`
+
+1. Bobs Store can now be accessed at
+<br />
+`localhost:8000`
 
