@@ -1,0 +1,30 @@
+.hero-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 650px) {
+    height: 500px;
+    padding: var(--spacer-m);
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: var(--spacer);
+  }
+}
+
+.hero-image__banner {
+  color: white;
+  font-size: 2em;
+  margin-bottom: var(--spacer-m);
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "roboto slab";
+  text-shadow: 6px -6px 20px #00000080;
+}

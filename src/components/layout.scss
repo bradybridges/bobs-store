@@ -19,6 +19,9 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+main {
+  min-height: calc(100vh - 300px);
+}
 article,
 aside,
 details,

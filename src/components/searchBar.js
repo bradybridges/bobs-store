@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import "./searchBar.scss"
 
+import SearchIcon from "../images/loupe-white.png"
 export default function SearchBar({ setSearch }) {
-  // Stores the value of the search input
   const [searchValue, setSearchValue] = useState("")
 
   const handleInputChange = e => {
@@ -28,17 +28,19 @@ export default function SearchBar({ setSearch }) {
 
   return (
     <form className="search-bar" onSubmit={handleSearch}>
-      <input
-        className="search-bar__input"
-        type="text"
-        maxLength="20"
-        placeholder="Search..."
-        value={searchValue}
-        onChange={handleInputChange}
-      />
-      <button className="search-bar__button" type="submit">
-        Search Icon
-      </button>
+      <div className="search-bar__wrapper">
+        <input
+          className="search-bar__input"
+          type="text"
+          maxLength="20"
+          placeholder="Search..."
+          value={searchValue}
+          onChange={handleInputChange}
+        />
+        <button className="search-bar__button" type="submit">
+          <img src={SearchIcon} alt="search" />
+        </button>
+      </div>
     </form>
   )
 }

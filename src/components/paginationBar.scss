@@ -9,7 +9,7 @@
 }
 
 .pagination-bar__page-button {
-  font-family: sans-serif;
+  font-family: "roboto slab";
   background-color: white;
   border: none;
   cursor: pointer;
@@ -27,5 +27,8 @@
   height: 36px;
   margin: 0 2px;
   color: white;
+  background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
+  background-size: contain;
+  background-position: center;
   cursor: default;
 }

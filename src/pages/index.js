@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react"
-
+import "./index.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SearchBar from "../components/searchBar"
 import SearchResults from "../components/searchResults"
+import HeroImage from "../components/heroImage"
 
 import { searchProducts } from "../api/products"
 
@@ -97,7 +98,10 @@ export default function IndexPage() {
   return (
     <Layout>
       <SEO title="Home" />
-      <SearchBar setSearch={setSearch} />
+      <HeroImage src="https://cdn.pixabay.com/photo/2016/11/22/10/47/woman-1848949_960_720.jpg">
+        <h3 className="hero-image__banner">Find your favorite products!</h3>
+        <SearchBar setSearch={setSearch} />
+      </HeroImage>
       {handleRenderResults()}
     </Layout>
   )
