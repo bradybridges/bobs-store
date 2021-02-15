@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import "./searchBar.scss"
+
+import SearchIcon from "../images/loupe.png"
 export default function SearchBar({ setSearch }) {
   const [searchValue, setSearchValue] = useState("")
 
@@ -36,7 +38,7 @@ export default function SearchBar({ setSearch }) {
           onChange={handleInputChange}
         />
         <button className="search-bar__button" type="submit">
-          X
+          <img src={SearchIcon} alt="search" />
         </button>
       </div>
     </form>
